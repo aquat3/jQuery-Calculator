@@ -1,6 +1,4 @@
  
- 
-
 $(document).ready(function(){
       var first="";
       var second="";
@@ -37,8 +35,7 @@ $(document).ready(function(){
          ans=0;
          more=false;//
          $("#operations").text("");       
-         
-         arithChoice="";
+        arithChoice="";
       });
       function clear(){
          $("#operations").text("");
@@ -93,8 +90,7 @@ $(document).ready(function(){
           second="";
     }else if(arithChoice==arith[1]){
       
-      ans=parseFloat(first)- parseFloat(second); 
-      $("#operations").text(ans);//
+      ans=parseFloat(first)- parseFloat(second); $("#operations").text(ans);//
       first="";
           second="";
       
@@ -102,21 +98,22 @@ $(document).ready(function(){
     }// minus
      else if(arithChoice==arith[2]){
       
-      ans=parseInt(first)* parseInt(second); $("#operations").text(ans);//
+      ans=parseFloat(first)* parseFloat(second); $("#operations").text(ans);//
       first="";
           second="";
       
       
     }else {
       
-           ans=parseInt(first)/parseInt(second);
+           ans=parseFloat(first)/parseFloat(second);
  $("#operations").text(ans);//
        first="";
           second="";
       
     }   
        more=true;//           
-       }else{
+       }
+     /*  */else{
         
         
         
